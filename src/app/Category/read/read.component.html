@@ -1,0 +1,19 @@
+<div class="container">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>CATEGORIA</th>
+        <th colspan="2">OPCIÓN</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let cat of categorias">
+        <td>{{cat.idcategoria}}</td>
+        <td>{{cat.nom_cat}}</td>
+        <td><button class="btn btn-warning">Editar</button></td>
+        <td><button class="btn btn-danger">Eliminar</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
